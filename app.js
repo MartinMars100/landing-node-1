@@ -6,7 +6,7 @@ var express = require('express');
 var path = require('path');
 
 var bodyParser = require('body-parser');
-var connect = require('connect');
+// var connect = require('connect');
 var methodOverride = require('method-override');
 var nodemailer = require('nodemailer');
 
