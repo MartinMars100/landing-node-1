@@ -71,7 +71,7 @@ app.post('/send', (req, res) => {
 
    transporter.sendMail(mailOptions, function (err, info) {
     console.log('log transporter.sendMail function');
-    if(err) {}
+    if(err) {
       alert('Sorry, we were not able to send your message. Try texting or calling.');
       console.log(err)
    }else {
