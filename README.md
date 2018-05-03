@@ -7,5 +7,4 @@ Install nodemon globally so the server restarts after every change.
   npm install nodemon -g
 
 To run the app type:
-  node app.js
   EMAIL=mmmmm...@gmail.com EMAIL_PASSWORD=cccaaa... node app.js
