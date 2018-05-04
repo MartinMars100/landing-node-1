@@ -13,7 +13,7 @@ var nodemailer = require('nodemailer');
 var app = express();
 
 // set our port
-app.set('port', process.env.PORT || 6000);
+app.set('port', process.env.PORT || 5000);
 
 // setup our static route to serve files from the "public" folder
 app.use('/static', express.static(__dirname + '/src/public'));
