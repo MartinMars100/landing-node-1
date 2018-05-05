@@ -78,7 +78,6 @@ app.post('/send', (req, res) => {
    }   
   });
 
-  console.log('The Note has been sent.');   
   res.render('index');
 });
 
