@@ -40,7 +40,6 @@ app.get('/', function (req, res) {
 });
 
 app.get('/dealNow', function (req, res) {
-  console.log('The show deals button was clicked.')
   res.render('dealNow');
 });
 

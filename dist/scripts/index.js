@@ -39,12 +39,8 @@ $(document).keypress(function(event){
   if (keycode == '13' ){   // If enter key is pressed
     var labelReturn = checkInputs();
     if (labelReturn) {
-      // $('label[for="name"]').addClass('error').text("Enter Your Name");
-      // labelReturn.addClass('focusBright');
       focusThis();
     } else {
-      // sendPrepare();
-       // The form will be submitted if the below is true
       if ($('#sendButton').hasClass('sendBright')) {
         // console.log('Fire Node send function');
       } else {
@@ -54,7 +50,6 @@ $(document).keypress(function(event){
         event.preventDefault();
       }
     }
-    // event.preventDefault();
   }
 });
 
@@ -67,7 +62,6 @@ $('#sendButton').click(function() {
     } else {
       // The form will be submitted if the below is true
       if ($('#sendButton').hasClass('sendBright')) {
-        console.log('Fire Node send function');
       } else {
         $('label[for="sendButton"]').addClass('error').text("Please Press Send");
         $("#sendButton").focus();
