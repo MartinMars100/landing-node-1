@@ -1,6 +1,14 @@
 doctype html
 html(lang='en')
   head
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-118791507-2')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-118791507-2');
+
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='description', content='')
@@ -105,6 +113,12 @@ html(lang='en')
                         | NCLMT #12314
               .card-footer
                 a.btn.btn-primary(href='https://salonlofts.com/marty_kunsman') MORE INFO
+
+    // dealNow Button 
+    section
+      h1#dealNowText.display-4.text-center.my-5 Great Deals on dealNow
+        a.btn.btn-primary.display-4#dealBtn(href='/dealNow') Show Me the Deals!
+
     // 2 Cards Across for Location Directions and Google Map Embedded
     section#section2.showcase.bg-light
       .container

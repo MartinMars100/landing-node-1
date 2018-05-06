@@ -39,6 +39,11 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
+app.get('/dealNow', function (req, res) {
+  console.log('The show deals button was clicked.')
+  res.render('dealNow');
+});
+
 app.post('/send', (req, res) => {
   console.log(req.body);
   const output = `

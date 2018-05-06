@@ -193,3 +193,7 @@ button {
  /* border: 1em solid #FF8C00; */
  /* border-radius: 50%; */
 }
+
+#dealBtn {
+  margin-left: 5%
+}
