@@ -1,0 +1,206 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Landing Page - Start Bootstrap Theme
+    // Bootstrap core CSS
+    link(href='/static/vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    // Custom fonts for this template
+    script(defer='', src='https://use.fontawesome.com/releases/v5.0.10/js/all.js', integrity='sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+', crossorigin='anonymous')
+    link(href='/static/vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='/static/vendor/simple-line-icons/css/simple-line-icons.css', rel='stylesheet', type='text/css')
+    // Custom styles for this template
+    link(href='/dist/css/landing-page.css', rel='stylesheet')
+    link(href='/dist/css/elements.css', rel='stylesheet')
+    // Custom js for this template
+    // <script src="js/my_js.js"></script>
+    script(src='/dist/scripts/index.js')
+  body
+    // Navigation
+    nav.navbar.navbar-light.bg-light.static-top
+      .container
+        a.navbar-brand(href='#') SalonLofts
+        a#bookBtn.btn.btn-primary Online Booking
+    // Popup Contact Form
+    #abc
+      .container
+        .row
+          #popupContact.col-xs-3.mx-auto
+            form#form(action='send', method='post', name='form')
+              #closeX(onclick='div_hide()')
+                i.far.fa-window-close
+              h2 Contact Us
+              label(for='name') Name:
+              input#name(name='name', type='text')
+              label(for='email') Email:
+              input#email(name='email', type='text')
+              label(for='note') Note:
+              textarea#note(name='note', type='text')
+              label(for='sendButton')
+              button#sendButton(type='submit') Send
+    //
+      <h1>Click Button To Popup Form Using Javascript</h1>
+      <button id="popup" onclick="div_show()">Popup</button>
+    // Masthead
+    header#header.masthead.text-white.text-center
+      .overlay
+      .container
+        .row
+          .col-xl-9.mx-auto
+            h1.mb-5 dealNow
+            button#contactBtn.btn.btn-primary.col-sm-5.mx-auto.hidden-sm Ask a Question/Contact
+        // end row
+      // end container
+    // Top 3 Cards Across
+    section#section.features-icons.bg-light.text-center
+      .container
+        .row
+          .col-md-4.mb-4
+            .card.h-100
+              .card-body
+                h2.card-title Location
+                img.mb-2.imgGallery1(src='/dist/img/gimp-salonlofts6.jpg', alt='')
+                h5.card-text
+                  | I-77 Exit 30 - Davidson Commons
+                  h5.card-text
+                    | Salon Lofts of Davidson
+                    h5.card-text
+                      | 624 Jetton Street
+                      h5.card-text
+                        | Loft #10
+                        h5.card-text
+                          | Davidson, NC
+              .card-footer
+                a.btn.btn-primary(href='https://salonlofts.com/marty_kunsman') MORE INFO
+          .col-md-4.mb-4
+            .card.h-100
+              .card-body
+                h2.card-title Services
+                img.mb-2.imgGallery1(src='/dist/img/gimp-room-2.jpg', alt='')
+                h5.card-text
+                  | 60 Minute Sports Massage
+                  h5.card-text
+                    | 60 Minute Swedish Massage
+                    h5.card-text
+                      | 60 Minute Neuromuscular Massage Therapy
+                      h5.card-text
+                        | 60 Minute Integrative/Custom Massage Session
+              .card-footer
+                a.btn.btn-primary(href='https://salonlofts.com/marty_kunsman/schedule') BOOK ONLINE
+          .col-md-4.mb-4
+            .card.h-100
+              .card-body
+                h2.card-title Therapist
+                img.mb-2.imgGallery1(src='/dist/img/gimp-marty-scrubs9.jpg', alt='')
+                h5.card-text 
+                  | Marty Kunsman, CMT, CNMT
+                  h5.card-text
+                    | Certified Massage Therapist
+                    h5.card-text
+                      | Certified Neuromuscular Massage Therapist
+                      h5.card-text
+                        | NCLMT #12314
+              .card-footer
+                a.btn.btn-primary(href='https://salonlofts.com/marty_kunsman') MORE INFO
+    // 2 Cards Across for Location Directions and Google Map Embedded
+    section#section2.showcase.bg-light
+      .container
+        .row
+          .col-md-6.mb-4
+            .card.h-100
+              .card-body
+                h2 Located near downtown Davidson
+                p.lead.mb-0
+                  | Salon Lofts is located on the corner of Griffith and Jetton. It is on the second floor of the building adjacent to the Harris Teeter. From I-77, take exit 30 and take a right at the second traffic circle and park in the Harris Teeter parking lot.
+          .col-md-6.mb-4
+            .card.h-100
+              .card-body.mapEmbed
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.1072864030666!2d-80.86314588474609!3d35.50162528023649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856abc9eb50e6bb%3A0xa683aa599a28d252!2sSalon+Lofts+Davidson+Commons!5e0!3m2!1sen!2sus!4v1524501067803" width=100% height=300px frameborder="0" style="border:0" allowfullscreen></iframe>
+          .row
+            .col-md-12.mb-4
+              .card.h-100
+                .card-body
+                  h2 About Marty
+                  p.lead.mb-0
+                    | Hi, I'm Marty Kunsman and I am a Massage Therapist and Neuromuscular Massage Therapist. I am a graduate of the University of South Carolina and ASHA, The Academy of Somatic Healing Arts. I have over 10 years of experience working in medical and spa settings. I do body assessments which measure overall tone, tight areas, range of motion and structure. I am the author of "Hard Body Pain and Massage Therapy Solutions." Let me help you understand how your current fitness, sport or yoga regimen are affecting your body. Bring me your pain, structural issues, tight muscles or just come for a relaxing massage. I look forward to seeing you.
+                  p.lead NC Licensed Massage and Bodywork Therapist 
+                  p.lead NC LMT #12314
+                  a.btn.btn-primary.btn-verify(href='https://www.bmbt.org/pages/License_Status.html') Online License Verification
+          
+      <section class="testimonials text-center bg-light">
+       <div class="container">
+        <h2 class="mb-5">What people are saying...</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <h5>Gina D.</h5>
+              <p class="lead">"I just got my first massage from Marty. I feel so much better now. He really understands the body and knew exactly where my sore spots were and now I feel so much better! Thank you Marty."</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <h5>Michelle O.</h5>
+              <p class="lead">"Marty is amazing. I am a hairstylist and on my feet for long hours. Have back pain often as well. He did a neuro muscular massage on me and I feel amazing. Can’t believe the difference. It’s been weeks and I still have no pain. Definitely highly recommend Marty."</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <h5>Hillary H.</h5>
+              <p class="lead">"It's so good to meet someone who seems like they are not just pressing but working areas for a reason."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    section#section.features-icons.bg-light.text-center
+      .container
+        .row
+          .col-md-4.mb-4
+            .card.h-100
+              .card-body
+                img.mb-2.imgGallery2(src='/dist/img/gimp-salonlofts6.jpg', alt='')
+          .col-md-4.mb-4
+            .card.h-100
+              .card-body
+                img.mb-2.imgGallery2(src='/dist/img/gimp-salonlofts7.jpg', alt='')
+          .col-md-4.mb-4
+            .card.h-100
+              .card-body
+                img.mb-2.imgGallery2(src='/dist/img/gimp-salonlofts5.jpg', alt='')
+                
+    section#section3.call-to-action.text-white.text-center
+      .overlay
+      .container
+        .row
+          .col-xl-9.mx-auto
+            h2.mb-4 Ready to get started? Click Here!
+            button#contactBtn2.btn.btn-primary.col-sm-5.mx-auto.hidden-sm Get Started
+         
+    footer#section.footer.bg-light
+      .container
+        .row
+          .col-lg-6.h-100.text-center.text-lg-left.my-auto
+          .col-lg-6.h-100.text-center.text-lg-right.my-auto
+            ul.list-inline.mb-0
+              li.list-inline-item.mr-3
+                a(href='https://www.facebook.com/salonloftsdavidson/')
+                  i#iconFB.fab.fa-facebook-f
+              //
+                <li class="list-inline-item mr-3">
+                <a href="#">
+                <i class="fa fa-twitter fa-2x fa-fw"></i>
+                </a>
+                </li>
+                <li class="list-inline-item">
+                <a href="#">
+                <i class="fa fa-instagram fa-2x fa-fw"></i>
+                </a>
+                </li>
+    // Bootstrap core JavaScript
+    // <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    script(src='/static/vendor/jquery/jquery.min.js')
+    script(src='/dist/scripts/index.js')
+    script(src='/static/vendor/bootstrap/js/bootstrap.bundle.min.js')
