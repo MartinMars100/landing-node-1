@@ -199,27 +199,54 @@ button {
 }
 
 #price1{
-  /* display: inline; */
   color: #000;
-  font-size: 1em;
+  font-size: 1.5em;
   text-decoration: line-through;
-  margin-top: 5%;
-  /* padding-right: 2%; */
+  /* margin-top: 5%; */
 }
 
 #price2{
-  /* display: inline; */
-  color: #ffaa00;
-  /* margin-left: 2%; */
+  color: #FF8C00;
+  font-size: 1.5em;
+}
+
+#price3{
+  color: #000;
   font-size: 1em;
+  padding-top: 1%;
+}
+
+#price4{
+  text-align: center;
+  color: #FF8C00;
+  font-size: 1em;
+  padding-top: 2%;
+  background-color: #fff;
+  padding: 2px 8px;
+  max-width: 20%;
+  border:  2px solid #FF8C00 !important;
 }
 
 #imgDeal {
   max-width: 100%;
 }
 
-/* .price span {
-  color: red;
-  display: inline;
-  font-size: 2em;
-} */
+#payImage {
+  width: 70%;
+}
+
+#buyBtn {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color:#FF8C00;
+  outline:0px !important;
+    -webkit-appearance:none;
+}
+
+#paypalForm {
+  border: none;
+  background-color: #fff;
+  font-family:raleway;
+  }
+  

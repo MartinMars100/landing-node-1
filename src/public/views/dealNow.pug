@@ -39,16 +39,14 @@ html(lang='en')
       .container
         .row
           #popupContact.col-xs-3.mx-auto
-            form#form(action='send', method='post', name='form')
+            form#form(action='send', method='post', name='form', onsubmit="alert('Thank you, check your email for a link to your purchase.');")
               #closeX(onclick='div_hide()')
                 i.far.fa-window-close
-              h2 Contact Us
+              h2 Buy the 1 Hour Swedish or Custom Massage Deal
               label(for='name') Name:
               input#name(name='name', type='text')
               label(for='email') Email:
               input#email(name='email', type='text')
-              label(for='note') Note:
-              textarea#note(name='note', type='text')
               label(for='sendButton')
               button#sendButton(type='submit') Send
     //
@@ -80,11 +78,37 @@ html(lang='en')
                 h4 45% off Swedish or Custom Massage
                 p.lead.mb-0
                   | Swedish or Custom Massage featuring Neuromuscular Massage and Sports Massage Therapy
-                h4.pull-right
-                  code#price1 $75
-                  code 
-                  code#price2 $41
+                code#price1.mr-2 $75
+                code#price2 $41
+                p#price3.mb-0.mt-0
+                  | Over 70 Sold
+                p#price4.mb-0.mt-0
+                  | 40% OFF
+                p#price5.mb-0.mt-2
+                  | This deal must be purchased in advance and used within 3 months of purchase. Click below to buy.
+                  // PayPal Logo
+                  table(border='0', cellpadding='10', cellspacing='0', align='center')
+                    tr
+                      td(align='center')
+                    tr
+                      td(align='center')
+                        a(href='')
+                          img#payImage(src='https://www.paypalobjects.com/webstatic/mktg/logo/AM_SbyPP_mc_vs_dc_ae.jpg', border='0', alt='PayPal Acceptance Mark')
+                  // PayPal Logo
+                  // This html is from paypal - the button will automatically submit a form
+                  form#paypalForm(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+                    input(type='hidden', name='cmd', value='_s-xclick')
+                    input(type='hidden', name='hosted_button_id', value='7XT5DXB9RUC4E')
+                    img(alt='', border='0', src='', width='1', height='1')
+                    button#buyBtn.btn.btn-primary.mx-auto.hidden-sm Buy 
                 
+
+                //- form(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+                //-   input(type='hidden', name='cmd', value='_s-xclick')
+                //-   input(type='hidden', name='hosted_button_id', value='7XT5DXB9RUC4E')
+                //-   input(type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif', border='0', name='submit', alt='PayPal - The safer, easier way to pay online!')
+                //-   img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1')
+            
     footer#section.footer.bg-light
       .container
         .row
@@ -109,4 +133,5 @@ html(lang='en')
     // <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     script(src='/static/vendor/jquery/jquery.min.js')
     script(src='/dist/scripts/index.js')
+    script(src='/dist/scripts/deal.js')
     script(src='/static/vendor/bootstrap/js/bootstrap.bundle.min.js')

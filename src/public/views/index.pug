@@ -39,7 +39,7 @@ html(lang='en')
       .container
         .row
           #popupContact.col-xs-3.mx-auto
-            form#form(action='send', method='post', name='form')
+            form#form(action='send', method='post', name='form', onsubmit="alert('Thank you, your message has been sent');")
               #closeX(onclick='div_hide()')
                 i.far.fa-window-close
               h2 Contact Us
@@ -65,7 +65,7 @@ html(lang='en')
         // end row
       // end container
     // Top 3 Cards Across
-    section#section.features-icons.bg-light.text-center
+    section#sectionRow1.bg-light.text-center.py-4
       .container
         .row
           .col-md-4.mb-4
@@ -117,9 +117,9 @@ html(lang='en')
                 a.btn.btn-primary(href='https://salonlofts.com/marty_kunsman') MORE INFO
 
     // dealNow Button 
-    section
-      h1#dealNowText.display-4.text-center.my-5 Great Deals on dealNow
-        a.btn.btn-primary.display-4#dealBtn(href='/dealNow') Show Me the Deals!
+    section.bg-light.pb-5
+      h1#dealNowText.text-center.bg-light Today's Deal
+        a.btn.btn-primary.display-4#dealBtn(href='/dealNow') Show Me the Deal!
 
     // 2 Cards Across for Location Directions and Google Map Embedded
     section#section2.showcase.bg-light
