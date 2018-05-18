@@ -32,7 +32,7 @@ html(lang='en')
       .container
         a.navbar-brand(href='#') SalonLofts
         a.navbar-brand(href='/') Home
-        a.navbar-brand(href='/dealNow') Deals
+        a#dealNav.navbar-brand Deals
         a#bookBtn.btn.btn-primary Online Booking
     // Popup Contact Form
     #abc
@@ -119,7 +119,8 @@ html(lang='en')
     // dealNow Button 
     section.bg-light.pb-5
       h1#dealNowText.text-center.bg-light Today's Deal
-        a.btn.btn-primary.display-4#dealBtn(href='/dealNow') Show Me the Deal!
+        .btn.btn-primary.display-4#dealBtn Show Me the Deal!
+        //- a.btn.btn-primary.display-4#dealBtn(href='/dealNow2') Show Me the Deal!
 
     // 2 Cards Across for Location Directions and Google Map Embedded
     section#section2.showcase.bg-light
@@ -199,41 +200,11 @@ html(lang='en')
       .container
         .row
           .col-lg-6.h-100.text-center.text-lg-left.my-auto
-            //
-              <ul class="list-inline mb-2">
-              <li class="list-inline-item">
-              <a href="#">About</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-              <a href="#">Contact</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-              </li>
-              </ul>
-              <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
           .col-lg-6.h-100.text-center.text-lg-right.my-auto
             ul.list-inline.mb-0
               li.list-inline-item.mr-3
                 a(href='https://www.facebook.com/salonloftsdavidson/')
                   i#iconFB.fab.fa-facebook-f
-              //
-                <li class="list-inline-item mr-3">
-                <a href="#">
-                <i class="fa fa-twitter fa-2x fa-fw"></i>
-                </a>
-                </li>
-                <li class="list-inline-item">
-                <a href="#">
-                <i class="fa fa-instagram fa-2x fa-fw"></i>
-                </a>
-                </li>
     // Bootstrap core JavaScript
     // <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     script(src='/static/vendor/jquery/jquery.min.js')

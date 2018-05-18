@@ -39,8 +39,20 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
-app.get('/dealNow', function (req, res) {
-  res.render('dealNow');
+app.get('/dealNow1', function (req, res) {
+  res.render('dealNow1');
+});
+
+app.get('/dealNow2', function (req, res) {
+  res.render('dealNow2');
+});
+
+app.get('/dealNow3', function (req, res) {
+  res.render('dealNow3');
+});
+
+app.get('/dealNow4', function (req, res) {
+  res.render('dealNow4');
 });
 
 app.post('/send', (req, res) => {

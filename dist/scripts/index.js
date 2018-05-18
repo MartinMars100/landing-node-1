@@ -1,4 +1,34 @@
 'use strict';
+console.log('log deal index.js');
+
+//Set the deal location depending on the day of the week
+
+var date = new Date();
+switch(date.getDay()){
+    case 0: var dealLocation = '/dealNow7';
+            break;
+    case 1: var dealLocation = '/dealNow1';
+            break;
+    case 2: var dealLocation = '/dealNow2';
+            break;
+    case 3: var dealLocation = '/dealNow3';
+            break;
+    case 4: var dealLocation = '/dealNow4';
+            break;
+    case 5: var dealLocation = '/dealNow5';
+            break;
+    case 6: var dealLocation = '/dealNow6';
+            break;
+}
+
+
+$('#dealBtn').click(function() {   // If deal button is clicked
+  window.location.href = dealLocation;
+});
+
+$('#dealNav').click(function() {   // If deal button is clicked
+  window.location.href = dealLocation;
+});
 
 $('#bookBtn').click(function() {   // If submit button is clicked
   var locationBuild = '';
